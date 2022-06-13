@@ -31,7 +31,7 @@ const Header = () => {
         />
       </div>
 
-      <div className="flex items-center mx-7 xl:min-w-[300px]">
+      <div className="lg:flex hidden items-center mx-7 xl:min-w-[300px]">
         <HomeIcon className="h-5 w-5" />
         <p className="hidden xl:inline flex-1 ml-2">Home</p>
         <ChevronDownIcon className="h-5 w-5" />
@@ -39,7 +39,7 @@ const Header = () => {
 
       <form
         action=""
-        className="flex flex-1 items-center space-x-2 rounded-sm border border-gray-200 bg-gray-100 px-3 py-1"
+        className="flex flex-1 ml-3 lg:ml-0 items-center space-x-2 rounded-sm border border-gray-200 bg-gray-100 px-3 py-1"
       >
         <SearchIcon className="h-6 w-6 text-gray-600" />
         <input
@@ -77,7 +77,7 @@ const Header = () => {
             <p className="cursor-pointer">Sign Out</p>
           </div>
           <div>
-            <ChevronDownIcon className="h-5 text-gray-400 mx-2 cursor-pointer" />
+            <ChevronDownIcon className="h-5 text-gray-400 cursor-pointer hidden lg:flex" />
           </div>
         </div>
       ) : (
